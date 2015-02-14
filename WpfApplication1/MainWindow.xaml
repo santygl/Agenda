@@ -1,8 +1,12 @@
-﻿<Window x:Class="WpfApplication1.MainWindow"
+﻿<Window x:Class="AgendaWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Agenda" Height="197.388" Width="211.045"
+        x:Name="ventana">
     <Grid>
-        
+        <Button x:Name="but_Nuevo" Content="Nuevo" HorizontalAlignment="Left" Margin="56,116,0,0" VerticalAlignment="Top" Width="93" Height="32" Click="but_Nuevo_Click" RenderTransformOrigin="0.538,-0.646"/>
+        <Button x:Name="but_BaseDatos" Content="Base de datos" HorizontalAlignment="Left" Margin="56,25,0,0" VerticalAlignment="Top" Width="93" Click="but_BaseDatos_Click" Height="32"/>
+        <Button x:Name="but_Contactos" Content="Ver Contactos" HorizontalAlignment="Left" Margin="56,73,0,0" VerticalAlignment="Top" Width="93" Height="27" Click="but_Contactos_Click"/>
+
     </Grid>
 </Window>

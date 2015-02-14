@@ -7,7 +7,7 @@
     <ProjectGuid>{AFE8001C-677E-4B91-B954-97DC2A0979DC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WpfApplication1</RootNamespace>
+    <RootNamespace>AgendaWPF</RootNamespace>
     <AssemblyName>WpfApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -53,7 +53,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="DAOContactos.cs" />
+    <Compile Include="DTOContacto.cs" />
+    <Compile Include="Nuevo.xaml.cs">
+      <DependentUpon>Nuevo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelecBase.xaml.cs">
+      <DependentUpon>SelecBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelecInstancia.xaml.cs">
+      <DependentUpon>SelecInstancia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Listado.xaml.cs">
+      <DependentUpon>Listado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar.xaml.cs">
+      <DependentUpon>Modificar.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Mainwindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -61,10 +78,30 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Mainwindow.xaml.cs">
+      <DependentUpon>Mainwindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Nuevo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelecBase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelecInstancia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Listado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modificar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -84,6 +121,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

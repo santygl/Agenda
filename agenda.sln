@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{AFE8001C-677E-4B91-B954-97DC2A0979DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda", "WpfApplication1\Agenda.csproj", "{AFE8001C-677E-4B91-B954-97DC2A0979DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
